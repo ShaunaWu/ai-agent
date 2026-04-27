@@ -4,6 +4,33 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@types/node':
+      specifier: ^22.15.3
+      version: 22.15.3
+    '@types/react':
+      specifier: 19.2.14
+      version: 19.2.14
+    '@types/react-dom':
+      specifier: 19.2.3
+      version: 19.2.3
+    eslint:
+      specifier: ^9.39.1
+      version: 9.39.1
+    next:
+      specifier: 16.2.4
+      version: 16.2.4
+    react:
+      specifier: ^19.2.5
+      version: 19.2.5
+    react-dom:
+      specifier: ^19.2.5
+      version: 19.2.5
+    typescript:
+      specifier: 5.9.2
+      version: 5.9.2
+
 importers:
 
   .:
@@ -15,7 +42,7 @@ importers:
         specifier: ^2.9.6
         version: 2.9.6
       typescript:
-        specifier: 5.9.2
+        specifier: 'catalog:'
         version: 5.9.2
 
   apps/admin:
@@ -24,13 +51,13 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
-        specifier: 16.2.4
+        specifier: 'catalog:'
         version: 16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react:
-        specifier: ^19.2.5
+        specifier: 'catalog:'
         version: 19.2.5
       react-dom:
-        specifier: ^19.2.5
+        specifier: 'catalog:'
         version: 19.2.5(react@19.2.5)
     devDependencies:
       '@repo/eslint-config':
@@ -40,19 +67,19 @@ importers:
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
-        specifier: ^22.15.3
+        specifier: 'catalog:'
         version: 22.15.3
       '@types/react':
-        specifier: 19.2.14
+        specifier: 'catalog:'
         version: 19.2.14
       '@types/react-dom':
-        specifier: 19.2.3
+        specifier: 'catalog:'
         version: 19.2.3(@types/react@19.2.14)
       eslint:
-        specifier: ^9.39.1
+        specifier: 'catalog:'
         version: 9.39.1
       typescript:
-        specifier: 5.9.2
+        specifier: 'catalog:'
         version: 5.9.2
 
   apps/web:
@@ -61,13 +88,13 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       next:
-        specifier: 16.2.4
+        specifier: 'catalog:'
         version: 16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react:
-        specifier: ^19.2.5
+        specifier: 'catalog:'
         version: 19.2.5
       react-dom:
-        specifier: ^19.2.5
+        specifier: 'catalog:'
         version: 19.2.5(react@19.2.5)
     devDependencies:
       '@repo/eslint-config':
@@ -77,19 +104,19 @@ importers:
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
-        specifier: ^22.15.3
+        specifier: 'catalog:'
         version: 22.15.3
       '@types/react':
-        specifier: 19.2.14
+        specifier: 'catalog:'
         version: 19.2.14
       '@types/react-dom':
-        specifier: 19.2.3
+        specifier: 'catalog:'
         version: 19.2.3(@types/react@19.2.14)
       eslint:
-        specifier: ^9.39.1
+        specifier: 'catalog:'
         version: 9.39.1
       typescript:
-        specifier: 5.9.2
+        specifier: 'catalog:'
         version: 5.9.2
 
   packages/eslint-config:
@@ -101,7 +128,7 @@ importers:
         specifier: ^16.2.0
         version: 16.2.0
       eslint:
-        specifier: ^9.39.1
+        specifier: 'catalog:'
         version: 9.39.1
       eslint-config-prettier:
         specifier: ^10.1.1
@@ -122,7 +149,7 @@ importers:
         specifier: ^16.5.0
         version: 16.5.0
       typescript:
-        specifier: ^5.9.2
+        specifier: 'catalog:'
         version: 5.9.2
       typescript-eslint:
         specifier: ^8.50.0
@@ -133,10 +160,10 @@ importers:
   packages/ui:
     dependencies:
       react:
-        specifier: ^19.2.5
+        specifier: 'catalog:'
         version: 19.2.5
       react-dom:
-        specifier: ^19.2.5
+        specifier: 'catalog:'
         version: 19.2.5(react@19.2.5)
     devDependencies:
       '@repo/eslint-config':
@@ -146,19 +173,19 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
-        specifier: ^22.15.3
+        specifier: 'catalog:'
         version: 22.15.3
       '@types/react':
-        specifier: 19.2.14
+        specifier: 'catalog:'
         version: 19.2.14
       '@types/react-dom':
-        specifier: 19.2.3
+        specifier: 'catalog:'
         version: 19.2.3(@types/react@19.2.14)
       eslint:
-        specifier: ^9.39.1
+        specifier: 'catalog:'
         version: 9.39.1
       typescript:
-        specifier: 5.9.2
+        specifier: 'catalog:'
         version: 5.9.2
 
 packages:
