@@ -16,3 +16,6 @@ catalog:
   
   # ESLint 相关
   eslint: "^9.39.1"
+
+  tailwindcss: ^4.1.15
+  "@tailwindcss/postcss": ^4.1.15
